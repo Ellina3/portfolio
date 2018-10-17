@@ -1,0 +1,690 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('fonts/Georgia Italic.ttf');
+    src: url('fonts/Georgia Italic.woff');
+    src: url('fonts/PTSans-Bold.ttf');
+    src: url('fonts/PTSans-Bold.woff');
+    src: url('fonts/Raleway-SemiBold.ttf');
+    src: url('fonts/raleway-semibold.woff');
+    src: url('fonts/OpenSans-Bold.ttf');
+    src: url('fonts/opensans-bold.woff');
+    src: url('fonts/Raleway-Regular.ttf');
+    src: url('fonts/Raleway-Regular.woff');
+    src: url('fonts/Raleway-Bold.ttf');
+    src: url('fonts/Raleway-Bold.woff');
+    src: url('fonts/Cardo-Italic.ttf');
+    src: url('fonts/Cardo-Italic.woff');
+    src: url('fonts/Raleway-Light.otf');
+    src: url('fonts/Raleway-Light.woff');
+  }
+  
+  * {
+    margin: 0;
+    padding:0;
+  }
+  
+  
+  .header {
+    background: url("img/City.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+  }
+
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .banx {
+    padding-bottom: 100px;
+}
+  
+  .logo {
+    font-size: 36px;
+    font-family: "Georgia";
+    color: rgb(79, 77, 106);
+    font-style: italic;
+    line-height: 80px;
+    float: left;
+  }
+  
+  .logo a {
+    line-height: 80px;
+    text-decoration: none;
+    color: rgb(79, 77, 106);
+  }
+  
+  .nav {
+      float: right; 
+      color: rgb(79, 77, 106);
+      line-height: 80px;
+  }
+  
+  ul.menu> li> a{
+    display: none;  
+  }
+  
+  .nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+  }
+  
+  .nav a {
+    color: rgb(79, 77, 106);
+    text-decoration: none;
+    display: inline-block;
+    line-height: 80px;
+    font-family: PTSans-Bold;
+    font-size: 12px;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+
+  .masterheader h1 {
+    font-size: 24px;
+    font-family: "Georgia";
+    color: rgb(79, 77, 106);
+    font-style: italic;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 40px;
+  }
+
+  .masterheader h1:before,
+  .masterheader h1:after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    width: 50%;
+    height: 1px;
+    vertical-align: middle;
+    background: white;
+  }
+
+  .masterheader h1:before {
+    left: -20px;
+    margin-left: -50%;
+  }
+
+  .masterheader h1:after {
+    left: 20px;
+    margin-right: -50%;
+  }
+
+  .masterheader h2 {
+    font-size: 125px;
+    font-family: "Georgia";
+    color: rgb(79, 77, 106);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .masterheader p {
+    font-size: 18px;
+    font-family: "Open Sans";
+    color: rgb(79, 77, 106);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+  }
+
+  .btns{
+    display: flex;
+    width: 100%;
+    padding-bottom: 612px;
+    justify-content: center;
+  }
+
+  .button1 > button{
+    margin-right: 20px;
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(to top,rgb(79,77,106), rgb(110,108,138));
+    width: 210px;
+    height: 42px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    line-height: 42px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.32);
+  }
+
+  .button2 > button{
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(to top, rgb(156,131,148), rgb(208,194,202));
+    width: 210px;
+    height: 42px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    line-height: 42px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.32);
+  }
+  
+  .works{
+    background-color:#ebebeb; 
+  }
+
+  .text h1 {
+    padding-top: 70px;
+    font-size: 18px;
+    font-family: "Georgia";
+    color: rgb(79, 77, 106);
+    font-style: italic;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .text h1:before,
+  .text h1:after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    width: 50%;
+    height: 1px;
+    vertical-align: middle;
+    background: white;
+  }
+
+  .text h1:before {
+    left: -20px;
+    margin-left: -50%;
+  }
+
+  .text h1:after {
+    left: 20px;
+    margin-right: -50%;
+  }
+
+  .text h2{
+    font-size: 72px;
+    font-family: "Georgia";
+    color: rgb(79, 77, 106);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+  }
+
+  .img{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  .img1{
+    width: 25%;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px; 
+  }
+
+  .img1 > a > img{
+    border: 20px solid #efefef;
+    border-radius: 50%;
+  }
+
+  .img1 h1{
+    padding-left: 25px;
+    padding-top: 20px; 
+    font-size: 22px;
+    font-family: "Georgia";
+    color: rgb(79, 77, 106);
+    font-style: italic;
+    text-align: left; 
+  }
+
+.img1 p{
+    padding-left: 25px;
+    padding-top: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: "Georgia";
+    color: rgb(79, 77, 106);
+    font-style: italic;
+    text-align: left;
+  }
+
+  .btns1{
+    display: flex;
+    width: 100%;
+    padding-bottom: 100px;
+    justify-content: center;
+  }
+
+  .button3 > button{
+    margin-right: 20px;
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(to top,rgb(79,77,106), rgb(110,108,138));
+    width: 210px;
+    height: 42px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    line-height: 42px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.32);
+  }
+
+  .button4 > button{
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(to top, rgb(156,131,148), rgb(208,194,202));
+    width: 210px;
+    height: 42px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    line-height: 42px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.32);
+  }
+
+  .features{
+    background-color: white;
+  }
+
+  .features h1{
+    font-size: 24px;
+    font-family: "Georgia";
+    color: rgb(79, 77, 106);
+    font-style: italic;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 10px; 
+    margin-bottom: 20px;
+  }
+
+  .collumns{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col p{
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(79, 77, 106);
+    font-style: italic;
+    text-align: left;
+    line-height: 20px; 
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .col button{
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(79, 77, 106);
+    width: 100px;
+    height: 22px;
+    margin-left: 10px;
+    margin-bottom: 80px;
+    border: none;
+  }
+
+  .footer{
+    background-color: #505050;
+  }
+
+  .coll h1{
+    font-size: 24px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    text-align: left;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .coll p{
+    font-size: 12px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    text-align: left; 
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+
+  .footer p{
+    font-size: 12px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    text-align: left; 
+    padding-bottom: 50px;
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 560px;
+    }
+  
+    .logo {
+      float:right;
+    }
+  
+    .nav {
+      float: left; 
+    }
+  
+    .nav ul li {
+      display: block;
+      position: initial;
+      margin-right: 10px;
+    }
+  
+    ul.menu > li{ 
+      text-align: left;
+    } 
+  
+    ul.menu > li > a{
+      display: block;
+      line-height: 100px;
+      text-align: left;
+      font-size: 20px;
+    }
+  
+    ul.menu > li > a:hover {
+      color: black;
+    }
+  
+    ul.submenu {
+      display: none;
+      position: absolute;
+      right: 0px; 
+      text-align: left;
+      width: 100%;
+    }
+  
+    ul.submenu > li > a {
+      display: block;
+      line-height: 112px;
+      border-bottom: 1px solid #4f5168;
+      font-size: 25px;
+    }
+  
+    ul.submenu > li > a:hover {
+      color: black;
+    }
+  
+    ul.menu > li:hover > ul.submenu {
+      display: block;
+      background-color: rgb(131, 107, 107);
+    }
+
+    .banx {
+      margin-bottom: 40px;
+    }
+
+    .masterheader h2 {
+      font-size: 100px;
+    }
+
+    .btns {
+      padding-bottom: 200px;
+    }
+
+    .text h1 {
+      padding-top: 50px;
+    }
+
+    .img {
+      display: flex;
+      flex-flow: wrap;
+    }
+
+    .img1 {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+
+    .btns1 {
+      padding-bottom: 30px;
+    }
+
+    .collumns {
+      display: block;
+    }
+
+    .features h1 {
+      font-size: 40px;
+    }
+
+    .col p {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+
+    .col button {
+      font-size: 20px;
+      width: 130px;
+      height: 30px;
+      margin-bottom: 40px;
+    }
+
+    .footer p {
+      padding-bottom: 0;
+    }
+
+    .coll h1 {
+      padding-top: 30px;
+    }
+
+    .coll p {
+      margin-bottom: 30px;
+    }
+
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container {
+      width: 300px;
+    }
+  
+    .logo {
+      float:right;
+    }
+  
+    .nav {
+      float: left; 
+    }
+  
+    .nav ul li {
+      display: block;
+      position: initial;
+      margin-right: 10px;
+    }
+  
+    ul.menu > li{ 
+      text-align: left;
+    } 
+  
+    ul.menu > li > a{
+      display: block;
+      line-height: 100px;
+      text-align: left;
+      font-size: 20px;
+    }
+  
+    ul.menu > li > a:hover {
+      color: black;
+    }
+  
+    ul.submenu {
+      display: none;
+      position: absolute;
+      right: 0px; 
+      text-align: left;
+      width: 100%;
+    }
+  
+    ul.submenu > li > a {
+      display: block;
+      line-height: 112px;
+      border-bottom: 1px solid #4f5168;
+      font-size: 25px;
+    }
+  
+    ul.submenu > li > a:hover {
+      color: black;
+    }
+  
+    ul.menu > li:hover > ul.submenu {
+      display: block;
+      background-color: rgb(131, 107, 107);
+    }
+
+    .banx {
+      margin-bottom: 40px;
+    }
+  
+    .masterheader h1 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }  
+    
+    .masterheader h2 {
+      font-size: 43px;
+      padding-bottom: 20px;
+    }  
+
+    .masterheader p {
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .btns {
+      display: block;
+      text-align: center;
+      padding-bottom: 100px;
+    }
+
+    .button1 > button {
+      margin-right: 0;
+    }
+
+    .masterheader button {
+      margin-top: 40px;
+    }
+
+    .text h1 {
+      padding-top: 40px;
+      font-size: 15px;
+    }
+
+    .text h2 {
+      font-size: 43px;
+    }
+
+    .img {
+      display: block;
+    }
+
+    .img1 {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .img1 p {
+      font-size: 15px;
+    }
+
+    .btns1 {
+      display: block;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    .button3 > button {
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+
+    .features h1 {
+      font-size: 24px;
+      padding-top: 30px;
+    }
+
+    .collumns {
+      display: block;
+      padding-bottom: 30px;
+    }
+
+    .col p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .col button {
+      font-size: 12px;
+      width: 100px;
+      height: 22px;
+      margin-bottom: 30px;
+    }
+
+    .footer p {
+      padding-bottom: 0;
+    }
+
+    .coll p {
+      margin-bottom: 10px;
+    }
+  }
+
+  
+  
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
