@@ -1,0 +1,791 @@
+@font-face {
+    font-family: 'Gentium Book Basic Bold';
+    src: url('fonts/GentiumBookBasic-Bold.ttf');
+    src: url('fonts/GentiumBookBasic-Bold.woff');
+}
+
+@font-face {
+    font-family: 'YesevaOne Regular';
+    src: url('fonts/YesevaOne-Regular.ttf');
+    src: url('fonts/YesevaOne-Regular.woff');
+}
+
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('fonts/Lato-Regular.ttf');
+    src: url('fonts/Lato-Regular.woff');
+}
+
+@font-face {
+    font-family: 'Georgia Regular';
+    src: url('fonts/Georgia-Regular.ttf');
+    src: url('fonts/Georgia-Regular.woff');
+}
+
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url('fonts/OpenSans-Bold.ttf');
+    src: url('fonts/OpenSans-Bold.woff');
+}
+
+@font-face {
+    font-family: 'OpenSans Italic';
+    src: url('fonts/OpenSans-Italic.ttf');
+    src: url('fonts/OpenSans-Italic.woff');
+}
+
+@font-face {
+    font-family: 'OpenSans Regular';
+    src: url('fonts/OpenSans-Regular.ttf');
+    src: url('fonts/OpenSans-Regular.woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background: url("img/contentbg.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header_container{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.logo{
+    float:left;
+    width: 31%;
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+.icon-menu{
+    display: none;
+}
+
+.icon-close{
+    display: none;
+}
+
+.mobile_tablet_menu{
+    display: none;
+}
+
+.navigation{
+    width: 60%;
+}
+
+ul.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.menu li{
+    list-style: none;
+    border-top: 3px solid transparent;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.menu li:hover{
+    border-top: 3px solid white;
+}
+
+ul.menu li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Gentium Book Basic Bold";
+    color: rgb(255, 255, 255);
+}
+
+.socialicons{
+    width: 7%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+
+.socialicons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #dab33e;
+    line-height: 40px;
+}
+
+.socialicons a:hover{
+    font-size: 30px;
+}
+
+.content{
+    padding-top: 120px;
+    padding-bottom: 140px;
+}
+
+.content h2{
+    overflow: hidden;
+    font-size: 90px;
+    line-height: 110px;
+    font-family: "YesevaOne Regular";
+    color: rgba(255, 255, 255, 0.922);
+    text-align: center;
+    text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
+}
+
+.decor{
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content_buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.content_buttons a{
+    width: 230px;
+    height: 55px;
+    line-height: 55px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Lato Regular";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+.content_buttons a:hover{
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.1) 100%), url("img/aboutpattern.png") repeat;
+    width: 100%;
+    position: relative;
+    box-shadow: inset 0px 0px 35px rgba(0,0,0,0.4);
+}
+
+.about_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.about_column:first-child {
+    width: 35%;
+    padding-left: 110px;
+}
+
+.about_column h2{
+    font-size: 36px;
+    font-family: "YesevaOne Regular";
+    color: rgb(204, 153, 0);
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.about .decor {
+    width: 58%;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.about_column p{
+    font-size: 16px;
+    font-family: "Lato Regular";
+    color: rgb(76, 76, 76);
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 50px;
+}
+
+.confirm{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.ingredients{
+    background: url("img/ingredientbg.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.ingredients_container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ingredient_info{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-left: 52%;
+    width: 48%;
+    background: url("img/ingidbg.jpg.png") no-repeat center center;
+    background-size: cover;
+}
+
+.ingredient_info h2{
+    font-size: 36px;
+    font-family: "YesevaOne Regular";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.ingredient_info .confirm {
+    width: 43%;
+    margin: 0 auto;
+}
+
+.ingredient_info p{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    width: 72%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: "Lato Regular";
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.ingredient_image{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.restaurant_menu{
+    background: linear-gradient(-44deg, rgba(0, 0, 0, 0) 9%, rgba(0,0,0,0.1) 100%), url("img/menupattern.png") repeat;
+    width: 100%;
+    position: relative;
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.2);
+}
+
+.restaurant_menu_container{
+    padding: 20px 0px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_collumn{
+    width: 35%;
+}
+
+.menu_collumn:first-child{
+    padding-left: 85px;
+}
+
+.menu_collumn:nth-child(2n){
+    padding-right: 85px;
+}
+
+.menu_section_name h2{
+    font-size: 36px;
+    font-family: "YesevaOne Regular";
+    color: rgb(204, 153, 0);
+    text-align: center;
+    padding-top: 70px;
+}
+
+.menu_section_decor{
+    padding-top: 15px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.position{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    border-bottom: 1px solid rgb(204, 153, 0);
+}
+
+.position_name span{
+    font-size: 21px;
+    line-height: 35px;
+    font-family: "YesevaOne Regular";
+    color: rgb(200, 159, 45);
+    text-align: left;
+}
+
+.position_price span{
+    font-size: 21px;
+    line-height: 35px;
+    font-family: "YesevaOne Regular";
+    color: rgb(200, 159, 45);
+    text-align: left;
+}
+
+.position_ingredients p{
+    font-size: 15px;
+    line-height: 35px;
+    font-family: "Lato Regular";
+    color: #4c4c4c;
+    text-align: left;
+}
+
+.menu_section_positions{
+    padding: 0px 0px 2px 10px;
+    width: 100%;
+}
+
+#greek_salad, #roast_lamb{
+    background: url("img/special.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding: 0px 10px 2px;
+}
+
+.guest_reviews{
+    background: url("img/guestreviewbg.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.guest_reviews_container{
+    padding: 100px 0px;
+}
+
+.review{
+    padding: 80px 0px 100px;
+    background: url("img/reviewbg.png") no-repeat center center;
+    background-size: cover;
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.review h2{
+    font-size: 36px;
+    font-family: "YesevaOne Regular";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.review_decor{
+    width: 31%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.review_comment img{
+    float: left;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.review_comment p{
+    font-size: 25px;
+    font-family: "Gentium Book Basic Bold";
+    color: rgb(221, 224, 223);
+    text-align: center;
+    line-height: 50px;
+    width: 79%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.review h3{
+    font-size: 16px;
+    font-family: "Lato Regular";
+    color: rgb(221, 224, 223);
+    text-align: center;
+    margin: 0 auto;
+    width: 22%;
+}
+
+.reservation {
+    background: url("img/aboutbg.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.reservation_container{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation_image{
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    padding-left: 60px;
+}
+
+.reservation_table{
+    width: 35%;
+    padding-right: 60px;
+}
+
+.reservation_table h2{
+    font-size: 36px;
+    font-family: "YesevaOne Regular";
+    color: rgb(204, 153, 0);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.reservation_decor{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.reservation_table p{
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(76, 76, 76);
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.reservation_table p:nth-child(2n){
+    width: 94%;
+    padding-bottom: 40px;
+}
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_col{
+    width: 45%;
+}
+
+.form_col label{
+    font-size: 14px;
+    font-family: "OpenSans Bold";
+    color: rgb(201, 161, 49);
+    text-align: left;
+}
+
+.form-control, select{
+    width: 100%;
+    margin: 5px 0px 25px;
+    padding-left: 15px;
+    line-height: 35px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgb(200, 198, 198);
+    font-size: 16px;
+    font-family: "OpenSans Italic";
+    color: rgb(124, 124, 124);
+    text-align: left;
+    position: relative;
+}
+
+.form_col select{
+    color: rgba(124, 124, 124, 0.6);
+    width: 108%;
+    padding: 6px 15px 5px;
+    background-image: url(img/icon.png);
+    background-position: center;
+    background-position-x: 180px;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px; 
+    text-overflow: '';
+    -ms-appearance: none;
+    appearance: none!important;
+}
+
+
+.form_col select::-ms-expand {
+    display: none;
+}
+
+.form-control:focus{
+    border: 1px solid rgb(200, 159, 45);
+}
+
+.icon-calendar{
+    position: absolute;
+    margin-top: -52px;
+    margin-left: 175px;
+    color: rgb(124, 124, 124);
+    cursor: pointer;
+}
+
+.btn_btn-primary{
+    width: 46%;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: "OpenSans Regular";
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(201, 161, 49);
+    border: none;
+    cursor: pointer;
+}
+
+.btn_btn-primary:hover{
+    background-color: rgba(201, 161, 49, 0.9);
+}
+
+.footer{
+    background-color: #191919;
+}
+
+.footer_container{
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_coll{
+    width: 31%;
+}
+
+.footer_decor{
+    width: 56%;
+    margin: 0 auto;
+}
+
+.footer_coll h2{
+    font-size: 21px;
+    font-family: "YesevaOne";
+    color: rgb(254, 254, 254);
+    text-align: center;
+    line-height: 40px;
+}
+
+.footer_coll p{
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: "OpenSans Regular";
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer_coll a{
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: "OpenSans Bold";
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.footer_coll p span{
+    font-size: 15px;
+    font-family: "OpenSans Bold";
+}
+
+.container_credit_cards{
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.container_credit_cards i{
+    color: white;
+    cursor: pointer;
+}
+
+.container_credit_cards i:hover{
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 94%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .icon-menu{
+        display: block;
+        left:50%; 
+        margin-left:-25px;
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        border: none;
+        border-radius: 0 0 50% 50% / 0 0 100% 100%;
+        background-color: rgb(218, 179, 62);
+        cursor: pointer;
+    }
+
+    .icon-menu:hover{
+        background-color: rgba(218, 179, 62, 0.9);
+        box-shadow: 6px 6px 35px 0px rgba(0,0,0,0.75);
+    }
+
+    .icon-menu i{
+        position: absolute;
+        color: white;
+        margin-top: -5px;
+        margin-left: 15px;
+        font-size: 30px;
+    }
+
+    .socialicons {
+        width: 15%;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .mobile_tablet_menu{
+        background: url("img/mobilebg.jpg") no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        display: block;
+        top: -118px;
+        height: 118px;
+    }
+
+    ul.menu li {
+        padding-bottom: 30px;
+    }
+
+    .icon-close {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        width: 50px;
+        height: 25px;
+        border: none;
+        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        background-color: rgb(218, 179, 62);
+    }
+
+    .icon-close i{
+        position: absolute;
+        color: white;
+        margin-top: 0px;
+        margin-left: 15px;
+        font-size: 30px;
+    }
+
+    .content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .content h2 {
+        font-size: 55px;
+        line-height: 90px;
+    }
+    .decor {
+        width: 38%;
+    }
+    .content_buttons {
+        width: 79%;
+    }
+    .about_container {
+        padding-bottom: 50px;
+    }
+    .about_column:first-child {
+        width: 50%;
+        padding-left: 70px;
+    }
+    .about .decor {
+        width: 100%;
+    }
+    .about_column p {
+        font-size: 14px;
+    }
+    .ingredient_info {
+        margin-left: 50%;
+        width: 50%;
+    }
+    .ingredient_info .confirm {
+        width: 80%;
+    }
+    .ingredient_info p {
+        width: 96%;
+    }
+    .restaurant_menu_container {
+        display: block;
+    }
+    .menu_collumn {
+        width: 67%;
+        margin: 0 auto;
+    }
+    .menu_collumn:first-child {
+        padding-left: 0px;
+    }
+    .menu_collumn:nth-child(2n) {
+        padding-right: 0px;
+    }
+    .review {
+        width: 80%;
+    }
+    .review_decor {
+        width: 50%;
+    }
+    .review_comment p {
+        font-size: 20px;
+        line-height: 40px;
+        width: 78%;
+    }
+    .reservation_image {
+        display: none;
+    }
+    .reservation_table {
+        width: 65%;
+        padding-right: 0px;
+        margin: 0 auto;
+    }
+    .footer_coll {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .footer_container {
+        display: block;
+        padding-bottom: 0px;
+    }
+    .footer_decor {
+        width: 30%;
+    }
+    .container_credit_cards {
+        width: 20%;
+        padding-top: 30px;
+        height: 30px; 
+    }
+
+}
