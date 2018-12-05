@@ -70,10 +70,10 @@
 }
 
 .header {
+    position: relative;
+    width: 100%;
     background: url("img/Headerghosthost.jpg") no-repeat center center;
     background-size: cover;
-    width: 100%;
-    position: relative;
 }
 
 .container{
@@ -180,15 +180,15 @@
 
 .register p{
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    line-height: 123px;
+    cursor: pointer;
 }
 
 .login p {
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
     margin-top: -123px;
+    line-height: 120px;
+    cursor: pointer;
 }
 
 .domain_container h2{
@@ -212,21 +212,29 @@
     width: 74%;
     border: 1px solid #d9d9d9;
     margin: 0 auto;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    height: 50px;
     margin-bottom: 40px;
+    font-size: 0;
+}
+
+.search form span{
+    font-size: 16px;
+    font-family: "Lato Regular";
+    color: rgb(203, 203, 203);
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .search select{
     border: none;
-    width: 9%;
+    width: 98px;
+    height: 50px;
     font-size: 16px;
     font-family: "Lato Regular";
     color: rgb(203, 203, 203);
     text-align: left;
     background-image: url(img/fa-angle-down.png);
-    margin-right: -20px;
-    padding-left: 13px;
     background-position: right center;
     background-repeat: no-repeat;
     -webkit-appearance: none;
@@ -394,6 +402,19 @@
     background: #ffffff;
     border: none;
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0,0.2);
+}
+
+.pack:first-child:hover{
+    box-shadow: 0px 4px 4px 3px #f9d423;
+}
+.pack:nth-child(2n):hover{
+    box-shadow: 0px 4px 4px 3px #7f8c8d;
+}
+.pack:nth-child(3n):hover{
+    box-shadow: 0px 4px 4px 3px #f85f40;
+}
+.pack:nth-child(4n):hover{
+    box-shadow: 0px 4px 4px 3px #1abc9c;
 }
 
 .pack:first-child{ 
@@ -594,7 +615,7 @@
     text-align: left;
 }
 
-.story h2 span:nth-child(2n){
+.story h2 span:last-child{
     font-size: 35px;
     font-family: "Lato SemiBold";
     color: rgb(48, 48, 48);
