@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Gentium Book Basic Bold';
+  src: url('fonts/GentiumBookBasic-Bold.ttf');
+  src: url('fonts/GentiumBookBasic-Bold.woff');
+}
+
+@font-face {
+  font-family: 'YesevaOne Regular';
+  src: url('fonts/YesevaOne-Regular.ttf');
+  src: url('fonts/YesevaOne-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('fonts/Lato-Regular.ttf');
+  src: url('fonts/Lato-Regular.woff');
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -121,18 +139,120 @@ h1 {
 footer {
   background: #333;
   bottom:0; 
+  margin-top: 70px;
   color: #ccc;
   font-size: 14px;
   height: 30px;
   line-height: 30px;
-  position:absolute; 
   text-align: center;
   width:100%; 
 }
 
 .swiper-container {
-  width: 1200px;
-  height: 300px;
+  width: 720px;
+  height: 350px;
+  margin: 0 auto;
+  background: rgba(201,201,201,0.3);
+  border: 5px solid rgba(124,124,124,0.5);
+  box-shadow: 10px 10px 20px 0px rgba(201,201,201,1);
+}
+li.swiper-slide {
+  width: 720px;
+  height: 350px;
+  list-style: none;
+}
+.swiper-pagination {
+  display: none;
+}
+
+.swiper-button-prev {
+  left: 280px;
+  top: 60%;
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgba(124,124,124,0.5);
+  border-radius: 50%;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  box-shadow: 3px 3px 8px 0px rgba(201,201,201,1);
+}
+
+.swiper-button-next {
+  right: 280px;
+  top: 60%;
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgba(124,124,124,0.5);
+  border-radius: 50%;
+}
+
+.description{
+  float: left;
+  padding: 50px 40px;
+}
+
+.description h2 span{
+  font-size: 25px;
+  font-family: "Gentium Book Basic Bold";
+  color: rgba(124,124,124,0.9);
+}
+
+.description h2,h3 {
+  font-size: 18px;
+  font-family: "YesevaOne Regular";
+  color: grey;
+  padding-bottom: 15px;
+}
+
+.description h3 {
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.description p {
+  font-size: 18px;
+  font-family: "Lato Regular";
+  color: grey;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+.description button  {
+  position: relative;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: #fff;
+  border: none;
+  margin-left: 20px;
+  border: 5px solid rgba(124,124,124,0.5);
+  cursor: pointer;
+}
+
+.description button p{
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Lato Regular";
+  text-align: left;
+  color: grey;
+  padding-left: 20px;
+}
+
+.description button i.fas.fa-angle-right{
+  font-size: 60px;
+  line-height: 70px;
+  color: grey;
+  width: 36%;
+}
+
+
+img {
+  height: 350px;
+  width: 290px;
+  float: right;  
+  border-left: 5px solid rgba(124,124,124,0.5);
 }
 
 @media screen and (max-width: 480px) {
