@@ -1063,6 +1063,14 @@ button#slick-slide-control02, button#slick-slide-control01, button#slick-slide-c
         width: 70%;
     }
 
+    .domaintable th {
+        line-height: 60px;
+        font-size: 12px;
+    }
+    .quadro {
+        left: 108px;
+    }
+
     .packages_container {
         flex-wrap: wrap;
     }
@@ -1076,6 +1084,9 @@ button#slick-slide-control02, button#slick-slide-control01, button#slick-slide-c
     .namepack p {
         padding-top: 20px;
         font-size: 12px;
+    }
+    .pricepack:hover p a {
+        font-size: 15px;
     }
 
     .datalist li {
@@ -1217,6 +1228,11 @@ button#slick-slide-control02, button#slick-slide-control01, button#slick-slide-c
         border-bottom: none;  
     }
 
+    .fa-user::before {
+        content: "\f007";
+        color: white;
+    }
+
     .menu > li > a{
         display: block;
         margin: 0 auto;
@@ -1284,6 +1300,10 @@ button#slick-slide-control02, button#slick-slide-control01, button#slick-slide-c
         color: rgb(56, 55, 55);
         text-align: center;
     }
+    .domain_container p {
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
 
     .search select {
         width: 26%;
@@ -1291,8 +1311,17 @@ button#slick-slide-control02, button#slick-slide-control01, button#slick-slide-c
     }
 
     .search input {
-        width: 50%;
+        width: 54%;
         padding-left: 5px;
+    }
+    .domaintable table {
+        width: 100%;
+    }
+    .domaintable th {
+        font-size: 10px;
+    }
+    .quadro {
+        left: 89px;
     }
 
     .pack {
@@ -1380,6 +1409,9 @@ button#slick-slide-control02, button#slick-slide-control01, button#slick-slide-c
         display: block;
         margin-top: 0px;
         padding-bottom: 20px;
+    }
+    .footernav {
+        width: 65%;
     }
 }
 
